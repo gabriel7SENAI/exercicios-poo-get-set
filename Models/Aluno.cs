@@ -11,7 +11,7 @@ public class Aluno
     {
         get => _nota; set
         {
-            if (value < 0 || value > 10)
+            if (value < 0 && value > 10)
                 throw new ArgumentOutOfRangeException(
                     nameof(Nota),
                     "São aceitas apenas notas entre 0 e 10.");
