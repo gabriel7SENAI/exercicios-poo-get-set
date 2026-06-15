@@ -3,9 +3,36 @@ namespace exercicios_get_set.Models;
 public class Livro
 {
     private int _numeroPaginas;
+    private string _titulo;
+    private string _autor;
 
-    public string? Titulo { get; set; }
-    public string? Autor { get; set; }
+    public string Titulo
+    {
+        get => _titulo;
+        set
+        {
+            if (string.IsNullOrWhiteSpace(value))
+                throw new ArgumentException(
+                    "Livro deve ter um título",
+                    nameof(Titulo));
+
+            _titulo = value;
+        }
+    }
+
+    public string Autor
+    {
+        get => _autor;
+        set
+        {
+            if (string.IsNullOrWhiteSpace(value))
+                throw new ArgumentException(
+                    "Livro deve ter um autor",
+                    nameof(Autor));
+
+            _autor = value;
+        }
+    }
     public int NumeroPaginas
     {
         get => _numeroPaginas; set

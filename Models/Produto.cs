@@ -3,6 +3,7 @@ namespace exercicios_get_set.Models;
 public class Produto
 {
     private decimal _preco;
+    private int _quantidade;
 
     private string? Nome { get; set; }
     private decimal Preco
@@ -17,7 +18,16 @@ public class Produto
             _preco = value;
         }
     }
-    private int Quantidade { get; set; }
+    private int Quantidade
+    {
+        get => _quantidade; set
+        {
+            if (value < 0)
+                throw new ArgumentOutOfRangeException(
+                nameof(Quantidade),
+                "Quantidade não pode ser negativa.");
+        }
+    }
 
     public Produto(string? nome, decimal preco, int quantidade)
     {
