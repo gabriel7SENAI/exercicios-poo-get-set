@@ -5,7 +5,7 @@ public class Produto
     private decimal _preco;
     private int _quantidade;
 
-    private string? Nome { get; set; }
+    private string Nome { get; set; } = string.Empty;
     private decimal Preco
     {
         get => _preco; set
@@ -29,7 +29,7 @@ public class Produto
         }
     }
 
-    public Produto(string? nome, decimal preco, int quantidade)
+    public Produto(string nome, decimal preco, int quantidade)
     {
         Nome = nome;
         Preco = preco;

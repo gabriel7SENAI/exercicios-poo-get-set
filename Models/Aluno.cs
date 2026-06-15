@@ -5,8 +5,8 @@ public class Aluno
     private double _nota;
 
 
-    private string? Nome { get; set; }
-    private string? Matricula { get; set; }
+    private string Nome { get; set; } = string.Empty;
+    private string Matricula { get; set; } = string.Empty;
     private double Nota
     {
         get => _nota; set
@@ -16,10 +16,10 @@ public class Aluno
                     nameof(Nota),
                     "São aceitas apenas notas entre 0 e 10.");
 
-            _nota = value; 
+            _nota = value;
         }
     }
-    public Aluno(string? nome, string? matricula, double nota)
+    public Aluno(string nome, string matricula, double nota)
     {
         Nome = nome;
         Matricula = matricula;
