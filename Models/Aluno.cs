@@ -11,14 +11,12 @@ public class Aluno
     {
         get => _nota; set
         {
-            if (value >= 0 && value <= 10)
-            {
-                _nota = value;
-            }
-            else
-            {
-                Console.WriteLine("São aceitas apenas notas entre 0 e 10. Nota definida como 0");
-            }
+            if (value <= 0 || value >= 10)
+                throw new ArgumentOutOfRangeException(
+                    nameof(Nota),
+                    "São aceitas apenas notas entre 0 e 10.");
+
+            _nota = value; 
         }
     }
     public Aluno(string? nome, string? matricula, double nota)

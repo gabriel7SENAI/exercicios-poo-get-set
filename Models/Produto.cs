@@ -9,11 +9,12 @@ public class Produto
     {
         get => _preco; set
         {
-            if (value >= 0)
-            {
-                _preco = value;
-            }
-            else { Console.WriteLine("Preço não pode ser negativo. Preço definido como 0"); }
+            if (value <= 0)
+                throw new ArgumentOutOfRangeException(
+                nameof(Preco),
+                "Preço não pode ser negativo.");
+
+            _preco = value;
         }
     }
     private int Quantidade { get; set; }
