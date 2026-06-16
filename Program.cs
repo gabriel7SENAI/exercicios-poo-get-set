@@ -1,4 +1,5 @@
 ﻿using exercicios_get_set.Models.Nivel_Iniciante;
+using exercicios_get_set.Models.Nivel_Intermediario;
 
 Console.Clear();
 
@@ -28,8 +29,12 @@ Console.Clear();
 
 
 // Retangulo retangulo = new(8, 5.7);
-// Console.WriteLine($"{retangulo.CalcularArea:F2}cm²");
+// Console.WriteLine($"Área do retângulo: {retangulo.CalcularArea:F2} cm²");
 
 
 // Funcionario funcionario = new("Gabriel", 1700);
 // funcionario.VerSalario();
+
+
+// Circulo circulo = new(5);
+// circulo.VerDiametroEArea();
