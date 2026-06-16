@@ -47,4 +47,23 @@ Console.Clear();
 // Temperatura temperatura = new(8);
 // temperatura.VerTemperatura();
 
- 
+
+// Voo voo = new(828, "RS", "RS");
+// voo.InformacoesVoo();
+
+
+// Paciente paciente = new("Gabriel", 67);
+// paciente.VerDadosPaciente();
+
+
+// Triangulo trianguloInvalido = new(2, 3, 5);
+// Console.WriteLine($"Triângulo válido: {trianguloInvalido.ValidarTriangulo()}");
+// Triangulo trianguloValido = new(3, 4, 5);
+// Console.WriteLine($"Triângulo válido: {trianguloValido.ValidarTriangulo()}");
+
+
+Imovel imovel = new("Rua rua", 655000);
+
+decimal desconto = 5;
+
+imovel.VerValor(desconto);
