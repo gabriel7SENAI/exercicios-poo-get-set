@@ -24,4 +24,12 @@ Console.Clear();
 // conta.ExibirSaldo();
 
 
-Pessoa pessoa = new(19);
+// Pessoa pessoa = new(19);
+
+
+// Retangulo retangulo = new(8, 5.7);
+// Console.WriteLine($"{retangulo.CalcularArea:F2}cm²");
+
+
+// Funcionario funcionario = new("Gabriel", 1700);
+// funcionario.VerSalario();
