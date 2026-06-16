@@ -1,4 +1,4 @@
-namespace exercicios_get_set.Models;
+namespace exercicios_get_set.Models.Nivel_Iniciante;
 
 public class Produto
 {

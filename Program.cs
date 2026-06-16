@@ -1,4 +1,4 @@
-﻿using exercicios_get_set.Models;
+﻿using exercicios_get_set.Models.Nivel_Iniciante;
 
 Console.Clear();
 
