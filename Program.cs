@@ -38,3 +38,13 @@ Console.Clear();
 
 // Circulo circulo = new(5);
 // circulo.VerDiametroEArea();
+
+
+// Data data = new(29, 2, 2024);
+// data.VerData();
+
+
+// Temperatura temperatura = new(8);
+// temperatura.VerTemperatura();
+
+ 
